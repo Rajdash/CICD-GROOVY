@@ -1,5 +1,5 @@
 @Library('codepipeline')
-node {
+node() {
    deleteDir();
    stage ("Release - Build") {
        checkout url: gitRepoUrl
