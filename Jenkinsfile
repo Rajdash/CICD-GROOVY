@@ -3,7 +3,7 @@ node() {
   
    stage ('Release - Build') {
        deleteDir();
-       checkout url: gitRepoUrl
+       git 'https://github.com/Rajdash/CICD-GROOVY.git'
       
    }
    stage ('Release - deploy') {
