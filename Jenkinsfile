@@ -1,9 +1,12 @@
 @Library('CICD-GROOVY@master')
 node() {
    deleteDir();
-   stages{
-   stage ("Release - Build") {
+ 
+   stage ('Release - Build') {
        checkout url: gitRepoUrl
    }
+   stage ('Release - deploy') {
+       sh echo "deployed"
    }
+
 }
