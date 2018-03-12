@@ -1,5 +1,5 @@
 @Library('CICD-GROOVY@master')
-node {
+node() {
   
    stage ('Release - Build') {
        deleteDir();
